@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 90%;
+    width: 400px;
+}
+.teams {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.team {
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.team-name {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #4CAF50;
+    text-align: center;
+    background-color: transparent;
+    width: 100%;
+}
+.score {
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+}
+input {
+    outline-color: #4CAF50;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    margin: 0 3px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+.timer {
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.timer-buttons {
+    margin-top: 15px;
+}
+.timer-buttons button {
+    background-color: #2196F3;
+}
+.timer-buttons button:hover {
+    background-color: #1E88E5;
+}
+@media (max-width: 480px) {
+    .scoreboard {
+        padding: 15px;
+        width: 95%;
+    }
+    .team-name {
+        font-size: 16px;
+    }
+    .score {
+        font-size: 36px;
+    }
+    button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .timer {
+        font-size: 28px;
+        padding: 8px 16px;
+    }
+}
